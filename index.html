@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .temp::after {
+            content: "°C";
+        }
+    </style>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container-fluid main-content ">
+        <div class="nav-img"></div>
+
+        <div class="row hero-section p-0 m-0">
+            <div class="col-md-9  col-sm-12 p-md-5 p-3 bg-gray">
+                <div class="row bg-white py-5">
+                    <div class="col-12 text-center">
+                        <div class="d-flex flex-column">
+                            <div class="fw-bold temp current-temp" id="main-temp"></div>
+                            <div class="secondary-temp fw-bold">
+                                <span class="temp" id="min-temp"></span> /
+                                <span class="temp" id="max-temp"></span>
+                            </div>
+                            <div class="city-name">
+                                <span id="city"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row  text-center bg-white  pb-5" id="days">
+
+                </div>
+
+            </div>
+            <div class="col-md-3 d-md-block d-none cloud">
+
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-12 text-center">
+                <p class="py-2 "><b>Source:</b> <a href="tutiempo.net">tutiempo.net</a> </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
